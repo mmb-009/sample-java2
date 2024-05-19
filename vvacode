@@ -1,0 +1,141 @@
+Sub CreateEmailEtiquettePresentation()
+    Dim pptApp As Object
+    Dim pptPres As Object
+    Dim pptSlide As Object
+    Dim slideIndex As Integer
+
+    ' Create a new PowerPoint application and presentation
+    Set pptApp = CreateObject("PowerPoint.Application")
+    pptApp.Visible = True
+    Set pptPres = pptApp.Presentations.Add
+
+    ' Slide 1: Title Slide
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 1)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Email Etiquette"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "Best Practices for Professional Communication" & vbCrLf & "Your Name/Organization"
+        ' Add relevant image (placeholder code, you need to provide a valid path to the image)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 2: Importance of Email Etiquette
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Importance of Email Etiquette"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Professionalism and first impressions" & vbCrLf & _
+                                                           "• Effective communication" & vbCrLf & _
+                                                           "• Avoiding misunderstandings" & vbCrLf & _
+                                                           "• Building relationships"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 3: CC and BCC: Why They Are Important
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "CC and BCC: Why They Are Important"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• CC (Carbon Copy):" & vbCrLf & _
+                                                           "  - Used to keep others in the loop" & vbCrLf & _
+                                                           "  - All recipients can see who else received the email" & vbCrLf & _
+                                                           "• BCC (Blind Carbon Copy):" & vbCrLf & _
+                                                           "  - Recipients are hidden from each other" & vbCrLf & _
+                                                           "  - Protects privacy and avoids cluttering inboxes" & vbCrLf & _
+                                                           "• Appropriate use cases for both" & vbCrLf & _
+                                                           "  - CC: Informing all team members about a project update" & vbCrLf & _
+                                                           "  - BCC: Sending a newsletter to a large group of clients"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 4: Clear and Concise Subject Lines
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Clear and Concise Subject Lines"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Importance of a descriptive subject line" & vbCrLf & _
+                                                           "• Keeping it short and to the point" & vbCrLf & _
+                                                           "Examples:" & vbCrLf & _
+                                                           "  - 'Meeting Agenda for May 20th' vs. 'Agenda'"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 5: Proper Greetings and Sign-Offs
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Proper Greetings and Sign-Offs"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Use appropriate salutations (e.g., Dear, Hello)" & vbCrLf & _
+                                                           "• Formal vs. informal greetings" & vbCrLf & _
+                                                           "• Proper sign-offs (e.g., Best regards, Sincerely)" & vbCrLf & _
+                                                           "Examples:" & vbCrLf & _
+                                                           "  - 'Dear Mr. Smith' vs. 'Hey John'" & vbCrLf & _
+                                                           "  - 'Sincerely, Jane Doe' vs. 'Later, Jane'"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 6: Professional Tone and Language
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Professional Tone and Language"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Avoid slang and jargon" & vbCrLf & _
+                                                           "• Be polite and respectful" & vbCrLf & _
+                                                           "• Use proper grammar and spelling" & vbCrLf & _
+                                                           "Examples:" & vbCrLf & _
+                                                           "  - 'Could you please provide the report by Friday?' vs. 'Send me the report ASAP'"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 7: Structuring Your Email
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Structuring Your Email"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Introduction, body, and conclusion" & vbCrLf & _
+                                                           "• Using paragraphs for readability" & vbCrLf & _
+                                                           "• Highlighting key points"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 8: Attachments and Links
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Attachments and Links"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Mention attachments in the body of the email" & vbCrLf & _
+                                                           "• Use clear and descriptive names for attachments" & vbCrLf & _
+                                                           "• Ensure links are working and relevant" & vbCrLf & _
+                                                           "Examples:" & vbCrLf & _
+                                                           "  - 'Please find the attached report for your review.'" & vbCrLf & _
+                                                           "  - 'Here is the link to the document: [Link]'"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 9: Proofreading and Double-Checking
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Proofreading and Double-Checking"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Importance of reviewing before sending" & vbCrLf & _
+                                                           "• Check for typos, grammatical errors, and correct recipient" & vbCrLf & _
+                                                           "• Ensure clarity and completeness"
+        ' Add relevant image (placeholder code)
+        '.Shapes.AddPicture "C:\Path\To\Your\Image.jpg", MsoFalse, MsoCTrue, 100, 100, 500, 300
+    End With
+
+    ' Slide 10: Common Mistakes to Avoid
+    slideIndex = slideIndex + 1
+    Set pptSlide = pptPres.Slides.Add(slideIndex, 2)
+    With pptSlide
+        .Shapes.Title.TextFrame.TextRange.Text = "Common Mistakes to Avoid"
+        .Shapes.Placeholders(2).TextFrame.TextRange.Text = "• Sending emails without proofreading" & vbCrLf & _
+                                                           "• Using 'Reply All' unnecessarily" & vbCrLf & _
+                                                           "
